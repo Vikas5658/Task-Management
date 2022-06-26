@@ -1,0 +1,21 @@
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px saddlebrown;
+    position: relative;
+}
+.tasklist{
+    height: 80vh;
+    margin-top: 100px;
+    border: 1px solid black;
+    margin: 20px; 
+    overflow-y:scroll;  
+    align-items: center;   
+    padding-left: 50px;
+}
+button{
+    padding: 0 10px;
+}
