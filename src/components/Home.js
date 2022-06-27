@@ -6,6 +6,7 @@ import { CreateTask } from './CreateTask';
 import {
     Button
 } from "reactstrap";
+import { FetchPost } from './sagaPost';
 
 export const Home = () => {
     const [popUp, setPopUp] = useState(false);
@@ -28,11 +29,11 @@ export const Home = () => {
             <CreateTask/> 
             <Button color="danger" onClick={()=>{
                 localStorage.removeItem('token')
-            }}>Log out</Button> 
+            }}>Log out</Button>            
             </header>   
             
             <div className='tasklist'>
-                <ListTask/>
+                <ListTask/>                
             </div>        
 
         </div>

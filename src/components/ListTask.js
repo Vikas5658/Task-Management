@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ListTask.css";
 import Axios from "axios";
-
+import {Link} from 'react-router-dom';
 
 import { ItemCard } from "./ItemCard";
 import { Filter } from "./Filter";
@@ -24,12 +24,15 @@ export const ListTask = () => {
   return (
     <>
     <div id="header">
+    
       <input type="text" placeholder="Search task.." 
       onChange={event=>setSearch(event.target.value)}/>
 
       <Filter statusData={users}/>
+      <Link to='fetchapi'>Jokes</Link>      
       
     </div>
+
       <div className="list-items" key={users.id}>
         {users &&
           users.filter((val)=>{
